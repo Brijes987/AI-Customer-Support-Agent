@@ -9,6 +9,15 @@
 run on 60 examples (gated by free-tier API daily quota limits — see
 `REPORT.md` Limitations).
 
+
+> **Note on repo files:** `BRAND_SELECTION.md`, `TAXONOMY_FIXES*.md`,
+> `PIPELINE_STATUS.md`, `PROJECT_STATUS.md`, `SCORING_FIX.md`, and similar
+> files in the repo root are development-process snapshots from earlier
+> project stages (taxonomy iteration rounds, individual bug fixes, setup
+> notes) and were not kept up to date after the moment they were written.
+> **`REPORT.md` is the final, authoritative account** of results, methodology,
+> failure analysis, and decisions — refer to it, not these intermediate files.
+
 ## What This System Does
 
 Given an incoming AmazonHelp customer message, the pipeline:
