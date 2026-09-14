@@ -1,0 +1,272 @@
+[
+  {
+    "thread_id": "1115225",
+    "customer_message": "@115821 I bought Moto G5s plus and its turbo charging is not working after 15 day of purchase.And its camera quality is not satisfactable.",
+    "drafted_reply": "I\u2019m sorry to hear that both the charging and camera on your Moto\u202fG5\u202fS\u202fPlus aren\u2019t meeting expectations. Please let our support team look into this for you by filling out the form here: https://t.co/vlvfJrlYEH (or https://t.co/bb5qDfhyS5). We\u2019ll work with you to resolve the issue or arrange a replacement under the warranty.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The reply accurately addresses both customer concerns, maintains a professional and empathetic tone, and provides clear actionable links for support and warranty resolution."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5
+    }
+  },
+  {
+    "thread_id": "2124782",
+    "customer_message": "This is my third @115821 fire stick from @127271, each one gave me this message. Amazon customer support tell me to keep exchanging them... @AmazonHelp @138244 https://t.co/eP7mc8Zy8O",
+    "drafted_reply": "Hi there \u2013 I\u2019m sorry you\u2019re still dealing with that error on your Fire Stick. Let\u2019s get this resolved right away: please open a replacement claim through the \u201cReturn or replace\u201d link in your order details, and we\u2019ll send you a brand\u2011new unit (or a refund if you prefer). If you need any help during the process, feel free to reply here or chat with us directly at https://t.co/hApLpMlfHN. Thank you for your patience.",
+    "judge_scores": {
+      "correctness": 3,
+      "tone": 4,
+      "completeness": 3,
+      "actionability": 4,
+      "brief_reasoning": "The reply provides clear instructions and a helpful tone, but suggesting a standard third replacement for the same persistent issue without escalating to troubleshooting or a supervisor is unhelpful given the customer's frustration."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 4,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "783416",
+    "customer_message": "@115850 7 calls and 2 emails regarding one order to the customer service, still no delivery. Shame on you guys.",
+    "drafted_reply": "I\u2019m really sorry you\u2019ve had to go through so many attempts without a delivery \u2013 that\u2019s not the experience we aim for. Could you please share the order number so we can investigate the delay immediately? You can also reach our dedicated support team directly here: https://t.co/vlvfJr4nN9, and we\u2019ll make sure a resolution is found as quickly as possible.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 4,
+      "actionability": 5,
+      "brief_reasoning": "The drafted reply appropriately acknowledges the customer's frustration, maintains a professional tone, asks for the necessary order number to investigate, and provides a helpful direct contact link."
+    },
+    "YOUR_SCORES": {
+      "correctness": 4,
+      "tone": 5,
+      "completeness": 4,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "505805",
+    "customer_message": "I just had the worst service with @115821 that I\u2019ve ever had and as an Amazon Prime member it\u2019s sad how rude I was just spoken to. \ud83d\ude15",
+    "drafted_reply": "I\u2019m really sorry to hear about the experience you had with @115821, especially as a valued Prime member. Could you share a bit more detail about what happened so we can investigate and make things right? Let us know how we can help, and we\u2019ll work to resolve this promptly.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The reply is empathetic, acknowledges the customer's Prime status, and asks for more details to investigate the rude service without hallucinating policies or order details."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "415696",
+    "customer_message": "@AmazonHelp hello, is there a twitter account for \"amazon prime\"? (not AP now)",
+    "drafted_reply": "Hi there!  \nYes, Amazon Prime has an official Twitter handle:\u202f[@AmazonPrime](https://twitter.com/AmazonPrime). You can follow it for the latest news, deals, and updates about Prime services. If you need any more help, just let us know!",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The drafted reply directly answers the customer's question with the correct Twitter handle, maintains a polite and helpful tone, and provides a clear next step with a link."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 4,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "353230",
+    "customer_message": "@AmazonHelp can you tell me which line or word does not meet as per your guidelines..",
+    "drafted_reply": "Hi there, thanks for reaching out! To help you identify the issue, could you please share the specific line or word you\u2019re concerned about? Once we have that, we\u2019ll review it against our content guidelines and let you know what needs to be adjusted.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The reply is professional, directly addresses the customer's request by asking for the specific content they want reviewed, and provides clear next steps."
+    },
+    "YOUR_SCORES": {
+      "correctness": 4,
+      "tone": 4,
+      "completeness": 5,
+      "actionability": 5
+    }
+  },
+  {
+    "thread_id": "1127260",
+    "customer_message": "@AmazonHelp pro tip: don\u2019t call your carrier service after the god of messages when you can\u2019t deliver messages",
+    "drafted_reply": "Hi, thanks for reaching out. Could you clarify which delivery or messaging issue you\u2019re experiencing? In the meantime, feel free to check our Help Center or contact us directly through the Amazon app for quick assistance.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 3,
+      "actionability": 4,
+      "brief_reasoning": "The drafted reply correctly asks for clarification on the vague complaint while providing reasonable next steps, though the customer's message was more of a sarcastic tweet than a traditional support request."
+    },
+    "YOUR_SCORES": {
+      "correctness": 4,
+      "tone": 4,
+      "completeness": 4,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "1416445",
+    "customer_message": "@121284 how do I pair my Fire TV stick with d Echo Dot so I can play shows with voice commands?It doesn't show up in d devices list",
+    "drafted_reply": "Hi!\u202fTo get your Fire TV Stick working with your Echo\u202fDot, make sure both devices are on the same Wi\u2011Fi network and that the \u201cAmazon Fire TV\u201d skill is enabled in the Alexa app. Open Alexa \u2192 Devices \u2192 Add Device \u2192 Fire TV, then follow the prompts to discover your stick; if it still doesn\u2019t appear, try restarting both devices or updating their firmware. For a step\u2011by\u2011step guide, see\u202fhttps://www.amazon.com/gp/help/customer/display.html?nodeId=202015480.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The reply provides accurate, highly actionable troubleshooting steps, includes a helpful support link, and maintains a polite and professional tone."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 5,
+      "actionability": 5
+    }
+  },
+  {
+    "thread_id": "198803",
+    "customer_message": "@AmazonHelp You dumb ass, did you see who is the seller in the mentioned order?did u see the price on the other websites? Stop barking if u dont know.",
+    "drafted_reply": "I\u2019m sorry you\u2019re frustrated.\u202fPlease check the seller and price details in your order history by clicking the \u201cView Order\u201d link in the Amazon app or on the website.\u202fIf you still have questions, let me know the order number and I\u2019ll look into it right away.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 4,
+      "actionability": 5,
+      "brief_reasoning": "The drafted reply maintains professionalism despite the customer's abuse, correctly directs them to check their order details, and offers further assistance if they provide the order number."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5
+    }
+  },
+  {
+    "thread_id": "982008",
+    "customer_message": "@115850 can you please arrange a call back. Your contact us section has serious issues",
+    "drafted_reply": "I\u2019m sorry you\u2019re having trouble with our Contact Us page.  \nPlease use this link to schedule a callback or chat with one of our representatives:\u202fhttps://t.co/JzP7hlRCV9.  \nWe\u2019ll be happy to assist you as soon as possible.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The reply acknowledges the customer's issue empathetically, provides a direct self-service link to solve their request for a callback, and is clear and professional."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 4,
+      "actionability": 5
+    }
+  },
+  {
+    "thread_id": "2567019",
+    "customer_message": "@AmazonHelp Done",
+    "drafted_reply": "Thank you for reaching out to us. If you need any further assistance in the future, please feel free to contact us again. Have a great day!",
+    "judge_scores": {
+      "correctness": 3,
+      "tone": 3,
+      "completeness": 2,
+      "actionability": 2,
+      "brief_reasoning": "The drafted reply is overly generic and does not address the ambiguous context of the customer saying just 'Done', though it remains polite."
+    },
+    "YOUR_SCORES": {
+      "correctness": 4,
+      "tone": 4,
+      "completeness": 4,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "34503",
+    "customer_message": "fico impressionado com a rapidez da @117086 nos envios dos pedidos, comprei ontem e j\u00e1 t\u00e1 em transporte \ud83d\udc99 amo demais",
+    "drafted_reply": "Ol\u00e1! \ud83d\udc4b Ficamos muito felizes em saber que a entrega foi r\u00e1pida e que voc\u00ea est\u00e1 satisfeito com a compra. Se precisar de qualquer coisa, estamos \u00e0 disposi\u00e7\u00e3o. \ud83d\udc99\u2728",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 3,
+      "brief_reasoning": "The reply is accurate, warm, and acknowledges the praise well, though actionability is slightly lower since the customer just shared positive feedback rather than asking a question."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5
+    }
+  },
+  {
+    "thread_id": "351819",
+    "customer_message": "@115830 Sat in all day to get a failed delivery attempt. Why do I pay for prime?!!",
+    "drafted_reply": "I\u2019m really sorry you were left waiting all day for a delivery that didn\u2019t go through. Please check the email we sent for details and use this link to reschedule or request a refund: https://t.co/qy3J24VGxb. We value your Prime membership and will work quickly to get your order to you.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The drafted reply appropriately acknowledges the frustration, provides a direct link to resolve the issue (reschedule/refund), and addresses the Prime membership concern effectively."
+    },
+    "YOUR_SCORES": {
+      "correctness": 4,
+      "tone": 4,
+      "completeness": 5,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "861180",
+    "customer_message": "@AmazonHelp My Kindle Fire HD 8 Tablet (bought in July) keeps crashing, while watching downloaded @129773 content. Help!",
+    "drafted_reply": "Hi there\u2014sorry you\u2019re having trouble with your Kindle Fire HD 8. Try clearing the cache for the video app (Settings\u202f\u2192\u202fApps\u202f\u2192\u202fVideo \u2192 Clear Cache) or reinstalling the app; this often resolves crashes. If the problem persists, let us know and we can reset the device or arrange a warranty replacement. You can reach us directly here: https://www.amazon.com/gp/help/customer/contact-us.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 5,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The drafted reply provides accurate troubleshooting steps, maintains a helpful and empathetic tone, fully addresses the crashing issue, and offers clear next steps including a direct contact link."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 4,
+      "actionability": 4
+    }
+  },
+  {
+    "thread_id": "136139",
+    "customer_message": "Been extremely disappointed in @115821 lately! What the hells going on? I rarely contact customer support. I spends tons of money on your website and yet I can\u2019t get a simple price change on an item I bought 10 days ago and it\u2019s $70 cheaper? Wow! I can\u2019t believe it!",
+    "drafted_reply": "I\u2019m really sorry to hear about your frustration, @115821. Unfortunately, Amazon\u2019s price\u2011drop protection only applies within 24\u202fhours of purchase, so a $70 difference after 10\u202fdays can\u2019t be refunded automatically. Please let us help you\u2014send the order details to our support team here: https://www.amazon.com/gp/help/customer/contact-us and we\u2019ll see what can be done.",
+    "judge_scores": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 5,
+      "actionability": 5,
+      "brief_reasoning": "The drafted reply accurately addresses the price-drop policy, maintains a professional and empathetic tone, answers the customer's specific concern, and provides a clear and direct link for further assistance."
+    },
+    "YOUR_SCORES": {
+      "correctness": 5,
+      "tone": 4,
+      "completeness": 5,
+      "actionability": 5
+    }
+  }
+]

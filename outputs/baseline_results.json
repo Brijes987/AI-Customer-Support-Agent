@@ -1,0 +1,134 @@
+{
+  "n_examples": 150,
+  "trivial_baseline": {
+    "description": {
+      "predicted_intent_always": "delivery_status_inquiry",
+      "predicted_routing_always": "escalate"
+    },
+    "intent_metrics": {
+      "accuracy": 0.44,
+      "macro_f1": 0.076,
+      "weighted_f1": 0.269,
+      "per_class": {
+        "account_access_issue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "complaint_no_action": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "delivery_status_inquiry": {
+          "precision": 0.44,
+          "recall": 1.0,
+          "f1": 0.611,
+          "support": 66
+        },
+        "general_inquiry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 39
+        },
+        "order_issue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 19
+        },
+        "payment_billing_issue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "prime_membership_inquiry": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        },
+        "refund_return_request": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        }
+      }
+    },
+    "routing_metrics": {
+      "accuracy": 0.727,
+      "auto_handle_precision": 0.0,
+      "auto_handle_recall": 0.0,
+      "auto_handle_f1": 0.0
+    }
+  },
+  "simple_baseline": {
+    "description": "Keyword-based intent classifier + rule-based routing, no LLM",
+    "intent_metrics": {
+      "accuracy": 0.38,
+      "macro_f1": 0.257,
+      "weighted_f1": 0.324,
+      "per_class": {
+        "account_access_issue": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "support": 5
+        },
+        "complaint_no_action": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "delivery_status_inquiry": {
+          "precision": 0.778,
+          "recall": 0.212,
+          "f1": 0.333,
+          "support": 66
+        },
+        "general_inquiry": {
+          "precision": 0.298,
+          "recall": 0.949,
+          "f1": 0.454,
+          "support": 39
+        },
+        "order_issue": {
+          "precision": 0.667,
+          "recall": 0.105,
+          "f1": 0.182,
+          "support": 19
+        },
+        "payment_billing_issue": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "prime_membership_inquiry": {
+          "precision": 1.0,
+          "recall": 0.2,
+          "f1": 0.333,
+          "support": 5
+        },
+        "refund_return_request": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 5
+        }
+      }
+    },
+    "routing_metrics": {
+      "accuracy": 0.3,
+      "auto_handle_precision": 0.275,
+      "auto_handle_recall": 0.951,
+      "auto_handle_f1": 0.426
+    }
+  }
+}

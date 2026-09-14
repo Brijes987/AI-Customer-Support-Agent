@@ -1,0 +1,32 @@
+{
+  "total": 82556,
+  "english": 68272,
+  "non_english": 14284,
+  "safety_flagged": 282,
+  "passed_filters": 68272,
+  "non_english_languages": {
+    "Chinese characters": 6398,
+    "German language": 2283,
+    "Portuguese language": 768,
+    "Spanish language": 1493,
+    "Devanagari": 75,
+    "French language": 2975,
+    "Japanese": 185,
+    "Cyrillic": 77,
+    "Arabic": 28,
+    "Korean": 2
+  },
+  "safety_reasons": {
+    "Severe abusive language detected": 93,
+    "Possible SSN detected": 37,
+    "Threat language detected: 'harass'": 89,
+    "Threat language detected: 'threaten'": 24,
+    "Threat language detected: 'find you'": 23,
+    "Crisis keyword detected: 'kill myself'": 3,
+    "Possible credit card number detected": 4,
+    "Threat language detected: 'will kill'": 2,
+    "Threat language detected: 'stalk'": 4,
+    "Crisis keyword detected: 'suicide'": 2,
+    "Crisis keyword detected: 'want to die'": 1
+  }
+}

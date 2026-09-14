@@ -1,0 +1,204 @@
+{
+  "version": "1.0",
+  "brand": "AmazonHelp",
+  "locked_date": "2026-09-09",
+  "num_intents": 8,
+  "design_notes": {
+    "venting_vs_topic": "CRITICAL DECISION: Venting + topic (e.g., angry about delivery) routes to that topic's intent, NOT to complaint_no_action. complaint_no_action is ONLY for topic-less venting with no identifiable subject matter.",
+    "rare_intent_oversampling": "account_access_issue, complaint_no_action, and prime_membership_inquiry are rare (<3% natural frequency). Golden set will deliberately oversample to ~5-10% each for evaluation coverage.",
+    "language_scope": "English-only. Non-English messages filtered at ingestion (documented limitation).",
+    "safety_escalation": "Crisis/threat/PII/abuse checks happen BEFORE intent classification (mandatory escalation)."
+  },
+  "intents": [
+    {
+      "intent": "delivery_status_inquiry",
+      "description": "Customer asking about delivery status, tracking, or when package will arrive. INCLUDES impatient follow-ups even if customer is venting about delay.",
+      "disambiguation_rule": "Focus on LOCATION/TIMING questions. If message mentions product problem (wrong/damaged item), classify as order_issue instead. Frustrated delivery complaints ('still don't have my order!') belong HERE, not complaint_no_action.",
+      "keywords": [
+        "where is",
+        "when will",
+        "tracking",
+        "delivered",
+        "arrive",
+        "shipping",
+        "status",
+        "package",
+        "parcel",
+        "shipment",
+        "not here",
+        "still waiting"
+      ],
+      "example_utterances": [
+        "Where is my package? Order #12345",
+        "Still unresolved - no clue where the shipment is",
+        "When will my order arrive?",
+        "Tracking shows delivered but I didn't receive it",
+        "Package was supposed to be here yesterday"
+      ],
+      "routing_hints": "Auto-handle if tracking info available; escalate if delivery confirmed but customer claims non-receipt."
+    },
+    {
+      "intent": "order_issue",
+      "description": "Problem with the product itself: wrong item received, missing items, damaged product, or not as described.",
+      "disambiguation_rule": "Focus on PRODUCT problems. Pure delivery timing complaints go to delivery_status_inquiry. Prime service complaints (about service level) are NOT product issues.",
+      "keywords": [
+        "wrong item",
+        "damaged",
+        "broken",
+        "missing",
+        "defective",
+        "incorrect",
+        "faulty",
+        "not what i ordered"
+      ],
+      "example_utterances": [
+        "Received wrong item - ordered blue, got red",
+        "Package arrived damaged",
+        "Missing 2 items from my order",
+        "Product is defective",
+        "This is not what I ordered"
+      ],
+      "routing_hints": "Often leads to refund/return. Auto-handle with return label if policy allows; escalate for high-value items."
+    },
+    {
+      "intent": "refund_return_request",
+      "description": "Customer explicitly requesting refund, return, or order cancellation. Must contain explicit ask for money back or to send item back.",
+      "disambiguation_rule": "MUST have explicit refund/return language. Damaged items without explicit refund request go to order_issue. 'Wet parcel chucked over wall' without 'want refund' = order_issue, not refund_return_request.",
+      "keywords": [
+        "refund",
+        "money back",
+        "return",
+        "send back",
+        "cancel order"
+      ],
+      "example_utterances": [
+        "I want a refund for order #12345",
+        "How do I return this item?",
+        "Please cancel my order",
+        "Can I get my money back?",
+        "Need to send this back"
+      ],
+      "routing_hints": "Auto-handle if within return window and policy-compliant; escalate if outside policy or high-value."
+    },
+    {
+      "intent": "payment_billing_issue",
+      "description": "Issues with charges, payment methods, unauthorized transactions, or billing errors.",
+      "disambiguation_rule": "Focus on financial transactions. Product issues are NOT payment issues even if customer mentions cost.",
+      "keywords": [
+        "charge",
+        "charged",
+        "payment",
+        "billing",
+        "unauthorized",
+        "credit card",
+        "overcharge"
+      ],
+      "example_utterances": [
+        "Why was I charged twice?",
+        "Unauthorized charge on my account",
+        "Payment method declined",
+        "Billing error - wrong amount charged",
+        "Can't update my credit card"
+      ],
+      "routing_hints": "Escalate unauthorized charges immediately. Auto-handle payment method updates if customer verified."
+    },
+    {
+      "intent": "account_access_issue",
+      "description": "Login problems, password resets, account locked, or other access issues.",
+      "disambiguation_rule": "Technical account access issues. NOT order/delivery problems even if customer can't check order status.",
+      "keywords": [
+        "login",
+        "password",
+        "sign in",
+        "account locked",
+        "can't access",
+        "reset password"
+      ],
+      "example_utterances": [
+        "Can't log in to my account",
+        "Password reset link not working",
+        "Account is locked",
+        "Forgot my password",
+        "Unable to sign in"
+      ],
+      "routing_hints": "Auto-handle password resets. Escalate suspected account compromise.",
+      "note": "RARE INTENT (~1-3% natural frequency) - oversample to ~5-10% for golden set evaluation coverage."
+    },
+    {
+      "intent": "prime_membership_inquiry",
+      "description": "Questions about Prime membership, subscription, benefits, or cancellation. Must explicitly mention Prime SUBSCRIPTION/MEMBERSHIP context, not just Prime service quality.",
+      "disambiguation_rule": "Must mention Prime subscription/membership/trial/benefits. 'I am a Prime member but not getting prime service' is a SERVICE COMPLAINT (delivery_status_inquiry or general_inquiry), NOT a membership question.",
+      "keywords": [
+        "prime membership",
+        "prime subscription",
+        "prime trial",
+        "cancel prime",
+        "prime benefits"
+      ],
+      "example_utterances": [
+        "How do I cancel Prime membership?",
+        "What are Prime benefits?",
+        "Prime trial ending - how to continue?",
+        "Prime subscription not active",
+        "Question about Prime account"
+      ],
+      "routing_hints": "Auto-handle benefit inquiries. Escalate cancellation requests (retention).",
+      "note": "RARE INTENT (~2-4% natural frequency) - oversample to ~5-10% for golden set."
+    },
+    {
+      "intent": "general_inquiry",
+      "description": "General questions or requests that don't fit other specific categories. Must have explicit question marker (how/what/why/can you) OR concrete action request (please help/need to). NOT frustration + topic (those route to topic intent).",
+      "disambiguation_rule": "Only if no other intent applies AND has clear question/request. 'Angry about delivery' = delivery_status_inquiry, NOT general_inquiry. This is for truly miscellaneous questions.",
+      "keywords": [
+        "how do i",
+        "what is",
+        "can you help",
+        "question about",
+        "need information"
+      ],
+      "example_utterances": [
+        "How do I update my address?",
+        "What is your return policy?",
+        "Can you help me find an item?",
+        "Question about gift cards",
+        "Need information on warranties"
+      ],
+      "routing_hints": "Auto-handle FAQ-style questions. Escalate complex policy questions."
+    },
+    {
+      "intent": "complaint_no_action",
+      "description": "Pure frustration/venting with NO identifiable subject matter or actionable request. TOPIC-LESS ONLY: 'Pathetic services!!!' has no topic. 'Still don't have my books!' HAS a topic (delivery) and belongs in delivery_status_inquiry.",
+      "disambiguation_rule": "CRITICAL: This is ONLY for messages with NO identifiable topic. If venting mentions delivery/order/refund/payment/account, route to THAT intent, NOT here. This category is for 'NOTHING YET. WOW' or 'Terrible service!!!' with zero context.",
+      "keywords": [
+        "pathetic",
+        "terrible",
+        "worst",
+        "disgusting",
+        "useless"
+      ],
+      "example_utterances": [
+        "Pathetic services!!!",
+        "NOTHING YET. WOW",
+        "Worst company ever",
+        "This is ridiculous",
+        "Completely useless"
+      ],
+      "routing_note": "STRONG ESCALATION CANDIDATE - no concrete resolution path without follow-up.",
+      "note": "RARE INTENT (~1-2% natural frequency under corrected definition) - oversample to ~5-10% for golden set.",
+      "design_decision": "Venting + topic (e.g., angry delivery complaint) routes to that topic's intent. This intent is ONLY for venting WITHOUT identifiable subject matter. Prevents systematic mis-escalation of frustrated but actionable requests."
+    }
+  ],
+  "evaluation_stratification": {
+    "target_distribution": {
+      "delivery_status_inquiry": "~35-40%",
+      "order_issue": "~10-15%",
+      "refund_return_request": "~8-12%",
+      "payment_billing_issue": "~5-8%",
+      "account_access_issue": "~5-10% (oversampled from ~1-3% natural)",
+      "prime_membership_inquiry": "~5-10% (oversampled from ~2-4% natural)",
+      "general_inquiry": "~10-20%",
+      "complaint_no_action": "~5-10% (oversampled from ~1-2% natural)"
+    },
+    "rationale": "Oversample rare intents for per-class F1 measurement. Natural distribution would give insufficient rare-intent examples for meaningful evaluation."
+  }
+}

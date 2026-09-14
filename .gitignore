@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+
+# Data and outputs (too large for git)
+data/
+cache/
+models/
+outputs/*.json
+outputs/*.csv
+!outputs/eval_results.json
+!outputs/baseline_results.json
+!outputs/judge_results.json
+!outputs/human_scoring_template.json
+
+# Keep data manifest (small metadata file)
+!data/data_manifest.json
+
+# Keep structure but ignore contents
+!data/.gitkeep
+!cache/.gitkeep
+!models/.gitkeep
+!outputs/.gitkeep
+
+# API keys and secrets
+.env
+.kaggle/
+kaggle.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Keep golden set (small, hand-labelled, version-controlled)
+!golden_set/
